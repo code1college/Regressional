@@ -1,0 +1,42 @@
+body {
+    text-align: center;
+    font-family: Verdana;
+    background-color: lightgray;
+}
+
+#stuff {
+    border: 4px solid black;
+    border-radius: 30px;
+    padding: 8px;
+}
+
+button {
+    width: 90px;
+    height: 30px;
+}
+
+button:active {
+    transform: translateY(5px);
+}
+
+.buttonG {
+    background-color: green;
+    border: 2px solid darkgreen;
+    font-size: large;
+    color: white;
+}
+
+.buttonR {
+    background-color: red;
+    border: 2px solid maroon;
+    font-size: large;
+    color: white;
+}
+
+.buttonG:hover {
+    background-color: rgb(39, 138, 39);
+}
+
+.buttonR:hover {
+    background-color: rgb(238, 74, 74);
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Regression Predictor</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <script src="calculation.js"></script>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="Drawing-5.sketchpad.jpeg">
+    </head>
+    <body>
+        <header>
+            <h1>Regression Predictor</h1>
+        </header>
+        <main>
+            <label>Regression Type: </label>
+            <select id="RegressionChoose">
+                <option value="0">Choose</option>
+                <option value="linear">Linear</option>
+                <option value="exponential">Exponential</option>
+            </select>
+            <br>
+            <br>
+            <label>X Value: </label>
+            <input type="text" placeholder="X Value: " id="xValueInput">
+            <p id="xData"></p>
+            <button onclick="submitX()" class="buttonG">Submit</button>
+            <button onclick="deleteX()" class="buttonR">Delete</button>
+            <br>
+            <br>
+            <label>Y Value: </label>
+            <input type="text" placeholder="Y Value: " id="yValueInput">
+            <p id="yData"></p>
+            <button onclick="submitY()" class="buttonG">Submit</button>
+            <button onclick="deleteY()" class="buttonR">Delete</button>
+            <br>
+            <br>
+            <button onclick="calculate()" class="buttonG">Calculate</button>
+            <br>
+            <br>
+            <div id="stuff">
+                <h2 id="equation"></h2>
+                <h2 id="rValue"></h2>
+                <h2 id="rValue2"></h2>
+                <h2 id="residuals"></h2>
+            </div>
+        </main>
+    </body>
+</html>
